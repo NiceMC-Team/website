@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>NiceMC官方网站</title>
+     <!--Description-->
+    <meta name="description" content="NiceMC Studio官网，主要项目：NiceCert、NCSD、NFS、ITS、Video Station">
+
+    <!--Keywords-->
+    <meta name="keywords" content="NiceMC,服务器,我的世界游戏,我的世界,mc,minecraft,NiceMC官方网站,NiceCert,NCSD,NFS,ITS,ECC,SHA,VS,Video Station,代码签名,Studio,防沉迷,在线答题系统,bilibili,多线程下载器">
+
+    </head>
+    <body>
+        <h1><a href="/"><img src="/img/nicemc.png" ></a></h1>
+        <hr>
+<div align="center">
+     <h2>NiceMC国内IPv6网站暂停建设</h2>
+     
+    <h2><img src="/img/welcome.png"/ ></h2>
+    <h4><img src="/img/75.png" /></h4>
+<div class="header">
+      <div class="countdown fade-in" id="countdown"></div>
+</div>
+
+    <hr>
+</div>
+    <h2>导航</h2>
+    <strong><p><a href="/NCSD/"><img src="/img/NCSD_1.png" /></a> | <a href="/HELP/"><img src="/img/Help.png"></a> | <a href="/Cert/"><img src="/img/nicecert_1.png" /></a> | <a href="/Video Station/"><img src="/img/vs.png"/></a></p></strong>
+    <hr>
+<div align="center">
+   <p><img src="/img/new.png" /></p>
+   <hr>
+</div>
+    <h3><a href="/../"><img src="/img/nicemc.png" ></a></h3>
+    <pre>本网站由NiceMC服务器运营团队提供全球高速节点支持</pre>
+    <h3><strong>合作伙伴</strong></h3>
+    <p><a href="https://about.qu-chat.top"><img src="/img/vapp.png" width="120" height="120"></a></p>
+    <p><strong>VApp(原WMSG工作组（原KysouWeb工作室)）</strong></p>
+    <h3><strong>联系我们</strong></h3>
+    <p><a href="https://space.bilibili.com/455459591"><img src="/img/bilibili.jpg" width="60" height="60" alt="方块人解说"></a> &nbsp &nbsp &nbsp &nbsp <a href="mailto:admin@nicemc.us.kg"><img src="/img/email.jpg" width="60" height="60" alt="官方邮箱"></a></p>
+    <h1>当前时间</h1>
+    <script>
+                Date.prototype.format = function (fmt) {
+                    var o = {
+                        "y+": this.getFullYear, //年
+                        "M+": this.getMonth() + 1, //月份
+                        "d+": this.getDate(), //日
+                        "h+": this.getHours(), //小时
+                        "m+": this.getMinutes(), //分
+                        "s+": this.getSeconds() //秒
+                    };
+                    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                    for (var k in o)
+                        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                    return fmt;
+                }
+                setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+            </script>
+        
+            <div id="dateTime">NiceHTML内置时间程序故障，请及时联系NiceMC官方获取支持</div>
+     <h1>友情链接</h1>
+<p><a href="vapp.html">VApp产品集</a></p>
+    <p><a href="https://mcpb-temp.ueuo.com">MCPB资源网</a></p>
+    <p>Copyright © 2020-2024 NiceMC Studio. All Rights Reserved.</p>
+    <hr>
+    <pre>使用NiceHTML 5.4 Pro高速内核</pre>
+    <pre>技术支持：NiceMC Studio</pre>
+    <pre><a href="/html/">内核信息</a></pre>
+<div title="TrustAsia 安全签章" id="myssl_seal" onclick="window.open('https://seal.trustasia.com/seal/detail?domain=pixelpark.top','TrustAsia 安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" ><img src="https://sealres.trustasia.com/seal/img/2x/seal.png" alt="TrustAsia 安全签章" style="width: 150px;height: auto; cursor: pointer"></div><div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=pixelpark.top','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" ><img src="https://sealres.myssl.com/seal/img/2x/seal.png" alt="MySSL 安全签章" style="width: 130px; height: auto; cursor: pointer"></div>
+<div title="NiceMC安全验证" id="nicemcssl" onclick="window.open('/Cert/web/nicemc.000.pe.html','NiceMC安全验证','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" ><img decoding="async" src="/img/ssl.png" alt="NiceMC安全验证" style="width: 130px; height: auto; cursor: pointer"></div>
+
+    <h1>&nbsp</h1>
+    <h1>&nbsp</h1>
+<script>
+  const countdownElement = document.getElementById('countdown');
+  const newYear = new Date('2024-10-8T00:00:00'); // 日期
+
+  function updateCountdown() {
+    const now = new Date();
+    const distance = newYear - now;
+    
+    if (distance < 0) {
+      countdownElement.innerHTML = '国庆已过，祝祖国更加强大！';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownElement.innerHTML = `距离国庆假期结束还有: <br> ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+ </body>
+<div style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"><a target="_blank" href="/" title="NiceMC官方网站"><img alt="NiceMC官方网站" src="/img/nicemc.png" style="border-width: 0px;width: 180px; height: 45px; float: right;"></a></div>
+</html>

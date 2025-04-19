@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>403 Error！| NiceMC</title>
+<h2><a href=".."><img src="img/nicemc.png" /></a>NiceMC</h2>
+<div align="center">
+<hr>
+<h3>403错误！</h3>
+<p><strong>NiceMC官方提醒您：出现该页面可能是CDN错误或当前浏览器版本过低！</strong></p>
+<p>联系我们</p>
+<p>QID:NiceMC9876</p>
+<p>交流群：<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=t-TGq-H8x3nMeH6Xw2aAf72rWDSkVAiE&authKey=nSZIJhhrcRvDDZHm4esXTPpRv4uYTcZFylPLqcG2kwSOHiML3OPaenQVWaj3YyKV&noverify=0&group_code=913610878">NiceMC交流群</a></p>
+<hr>
+</div>
+<h2><a href=".."><img src="img/nicemc.png" /></a>NiceMC</h2>
+<h3>当前时间</h3>
+<script>
+                Date.prototype.format = function (fmt) {
+                    var o = {
+                        "y+": this.getFullYear, //年
+                        "M+": this.getMonth() + 1, //月份
+                        "d+": this.getDate(), //日
+                        "h+": this.getHours(), //小时
+                        "m+": this.getMinutes(), //分
+                        "s+": this.getSeconds() //秒
+                    };
+                    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                    for (var k in o)
+                        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                    return fmt;
+                }
+                setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+            </script>
+<div id="dateTime">NiceHTML内置时间程序故障，请及时联系NiceMC官方获取支持</div>
+</head>
+<body>
+</body>
+</html>
